@@ -56,9 +56,9 @@ print(game_choices[comp_selector])
 #   p   0   2   1
 #   s   1   0   2
 
-player_was_rock = [2, 1, 0]
-player_was_paper = [0, 2, 1]
-player_was_scissors = [1, 0, 2]
+comp_was_rock = [2, 1, 0]
+comp_was_paper = [0, 2, 1]
+comp_was_scissors = [1, 0, 2]
 
 outcome = [player_was_rock] + [player_was_paper] + [player_was_scissors]
 winner = outcome[comp_selector][int(player_choice)]
