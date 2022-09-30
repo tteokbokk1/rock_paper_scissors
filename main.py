@@ -42,8 +42,7 @@ else:
     exit()
 
 #randomly select from the list of outcomes
-num_comp_choices = [0, 1, 2]
-comp_selector = random.choice(num_comp_choices)
+comp_selector = random.randint(0, 2)
 
 print("The computer chooses:")
 print(game_choices[comp_selector])
@@ -60,7 +59,7 @@ comp_was_rock = [2, 1, 0]
 comp_was_paper = [0, 2, 1]
 comp_was_scissors = [1, 0, 2]
 
-outcome = [player_was_rock] + [player_was_paper] + [player_was_scissors]
+outcome = [comp_was_rock] + [comp_was_paper] + [comp_was_scissors]
 winner = outcome[comp_selector][int(player_choice)]
 
 if winner == 0:
